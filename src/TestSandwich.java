@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 
 public class TestSandwich {
 
@@ -15,6 +17,47 @@ public class TestSandwich {
 		 * Sandwich instance.
 		 * 
 		 */
+		
+		Sandwich carolSandwich = new Sandwich();
+		Sandwich joshSandwich = new Sandwich();
+
+		
+		//set the values of fields in sandwich
+		carolSandwich.setMainIngred("Turkey");
+		carolSandwich.setBreadType("white");
+		carolSandwich.setPrice(5);
+			
+		
+		//carols sandwiches
+		String mainIngred =
+				JOptionPane.showInputDialog(" what is the main ingredient?");
+			carolSandwich.setMainIngred(mainIngred);
+		
+		String breadtype = JOptionPane.showInputDialog("what is the bread type?");
+		carolSandwich.setBreadType(breadtype);
+		
+		String customer = JOptionPane.showInputDialog("how much is this sandwich?");
+		
+		int price = Integer.parseInt(JOptionPane.showInputDialog ("How much is this sandwich?"
+				+ price + " ?"));
+		
+		
+		//josh's sandwiches
+		joshSandwich.setMainIngred("Turkey");
+		joshSandwich.setBreadType("white");
+		joshSandwich.setPrice(10);
+			
+		String mainIngred =
+				JOptionPane.showInputDialog(" what is the main ingredient?");
+		joshSandwich.setMainIngred(mainIngred);
+		
+		String breadType = JOptionPane.showInputDialog("what is the bread type?");
+	joshSandwich.setBreadType(breadtype);
+		
+		String customer2 = JOptionPane.showInputDialog("how much is this sandwich?");
+		
+		int price = Integer.parseInt(JOptionPane.showInputDialog ("How much is this sandwich?"
+				+ price + " ?"));
 
 	}
 
